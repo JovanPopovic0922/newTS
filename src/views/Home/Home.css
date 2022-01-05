@@ -48,6 +48,9 @@
 }
 
 @media (max-width:768px) {
+    .home-indicator{
+        display: block !important;
+    }
     .home{
         width: 100%;
         height: 100%;
@@ -98,16 +101,4 @@
         margin-top: 150% !important;
         justify-content: space-evenly !important;
     };
-  
-    /* .button-group{
-        position: fixed;
-        bottom: 0px;
-    } */
 }
-
-@media (max-width:768px) {
-    .home-indicator{
-        display: block !important;
-    }
-}
-
