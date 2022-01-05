@@ -1,0 +1,114 @@
+.networkBody{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    padding: 0% 0.5%;
+    background-image: url("../../assets/img/back/head-eye.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: 0px;
+    bottom: 0px;
+    font-family: "Futura PT" !important;
+    letter-spacing: 4px;
+    color: hsl(0deg 0% 84%) !important;
+}
+
+.header-one{
+    background-color: #F8C16C;
+    background-image: linear-gradient(45deg, #DF7646, #F8C16C);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    letter-spacing: 8px !important;
+}
+
+.header-two{
+    background-color: #F8C16C;
+    background-image: linear-gradient(45deg, #EA9757, #F8C16C);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    letter-spacing: 8px !important;
+}
+
+.header-three{
+    background-color: #F8C16C;
+    background-image: linear-gradient(45deg, #F8C16C, #E3804B);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    letter-spacing: 8px !important;
+}
+
+.homeBtn{
+    margin-top: 32vh !important;
+}
+
+.network-cross{
+    width: auto;
+    display: none !important;
+    font-weight: 100;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 30px;
+    left: calc(44% - 80px/2);
+} 
+
+.text-group-community{
+    position: relative;
+}
+
+.text-group-update{
+    position: relative;
+}
+
+.text-group-whereto{
+    position: relative;
+}
+
+@media (max-width: 768px) {
+
+    .networkBody{
+        background-image: url("../../assets/responsive/svg/res-network.svg");
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .homeBtn{
+        display: none !important;
+    }
+
+    .network-cross{
+       display: block !important;
+    }
+
+    .text-group-community{
+        position: absolute;
+        left : calc(44% - 100px/2);
+        top: 200px;
+    }
+
+    .text-group-update{
+        position: absolute;
+        left : calc(44% - 100px/2);
+        top: 430px;
+    }
+
+    .text-group-whereto{
+        position: absolute;
+        left : calc(44% - 100px/2);
+        top: 545px;
+    }
+}

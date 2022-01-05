@@ -1,0 +1,82 @@
+
+.aboutBody{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    padding: 0% 0.5%;
+    background-image: url("../../assets/img/back/head-eye.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    font-family: "Futura PT" !important;
+    letter-spacing: 4px;
+    color: hsl(0deg 0% 84%) !important;
+}
+.responsive-text{
+    display: none;
+}
+.gradient-text{
+    width: 200px;
+    height: 421px;
+    position: fixed;
+    left: 34%;
+    top: 20% !important;
+    display: none;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(51, 51, 51, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+     overflow:scroll;
+}
+.about-cross{
+    width: auto;
+    display: none !important;
+    font-weight: 100;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 30px;
+    left: calc(44% - 108px/2);
+}
+
+.indiv-text{
+    margin-top: 20px !important;
+    line-height: 20px !important;
+    letter-spacing: 20% !important;
+    word-wrap: normal;
+    text-align: left;
+}
+
+.gradient-text::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .aboutBody{
+        background-image: url("../../assets/responsive/svg/res-network.svg");
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .chart-dot{
+        display: none;
+    }
+    .responsive-text{
+        display: block;
+        position : fixed;
+        width : 100%;
+        height : 100%;
+    }
+    .dot-text{
+        display: none !important;
+    }
+    .gradient-text{
+        display: block;
+    }
+    .about-cross{
+        display: block !important;
+    }
+}
