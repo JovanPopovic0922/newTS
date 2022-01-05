@@ -47,7 +47,7 @@
     border-radius: 100px;
 }
 
-@media (max-width:768px) {
+@media (max-width:700px) {
     .home-indicator{
         display: block !important;
     }

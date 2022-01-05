@@ -78,7 +78,7 @@
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
 
     .networkBody{
         background-image: url("../../assets/responsive/svg/res-network.svg");
