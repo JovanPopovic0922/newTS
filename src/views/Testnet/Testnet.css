@@ -46,7 +46,7 @@
     left: calc(44% - 40px/2);
 }
 
-@media (max-width:800px) {
+@media (max-width:960px) {
     .testnet{
         background-image: url("../../assets/responsive/svg/res-network.svg");
         overflow-y: hidden;
