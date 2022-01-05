@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./About.css";
-import { Grid, Typography, Stack } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom"
 import { dotExplain } from "../../constants/dotExplain";    
 import { ArrowBackIos } from "@mui/icons-material";
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
@@ -16,10 +17,10 @@ function About(){
     return (
         <div className="aboutBody">
           <Grid container spacing={3} justifyContent="flex-start" className="my-5 py-5" alignItems="flex-start">
-             <Grid item  md={2} className="my-5 py-5 homeBtn"  >
-                 <a href="/home"  >
-                   <ArrowBackIos />HOME
-                 </a>
+          <Grid item  md={2} className="my-5 py-5"  >
+                 <Link to="/home" className="homeBtn" >
+                   <ArrowBackIos />  HOME
+                 </Link>
              </Grid>
              <Grid container item md={9} xs={12} className="my-1 py-5" justifyContent={"flex-start"} >
                 <Grid item md={10} justifyContent={"center"} >

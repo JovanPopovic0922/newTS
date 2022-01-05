@@ -51,7 +51,10 @@
 }
 
 .homeBtn{
-    margin-top: 32vh !important;
+    position: fixed;
+    left: 71px;
+    top: 370px;
+    border-radius: 0px;
 }
 
 .network-cross{

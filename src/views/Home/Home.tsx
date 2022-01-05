@@ -1,25 +1,26 @@
 import React from "react";
 import "./Home.css";
 import { Grid } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export default function Home(){
     return (
        <div className="home">
             <Grid container direction="row"  className="py-5 my-5 button-group" justifyContent="center" alignItems="center" >
                 <Grid item className="py-5 my-3 mx-4">
-                    <a href="/papers">
+                    <Link to="/papers">
                         <div className="paperChange" />
-                    </a>
+                    </Link>
                 </Grid>
                 <Grid item  className="py-5 my-3 mx-3">
-                    <a href="/">
+                    <Link to="/">
                         <div className="pathChange"></div>
-                    </a>
+                    </Link>
                 </Grid>
                 <Grid item  className="py-5 my-3 mx-3">
-                    <a href="/testnet">
+                    <Link to="/testnet">
                         <div className="testnetChange"></div>
-                    </a>
+                    </Link>
                 </Grid>
                 <Grid item className="home-indicator">
                     

@@ -3,15 +3,16 @@ import "./Testnet.css";
 import { Button, Grid, Stack, Typography} from "@mui/material";
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import { ArrowBackIos } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 function Testnet(){
     return (
         <div className="testnet">
             <Grid container>
-                <Grid item  md={2} className="my-5 py-5 homeBtn"  >
-                    <a href="/home"  >
+                <Grid item  md={2} className="my-5 py-5"  >
+                    <Link to="/home" className="homeBtn" >
                     <ArrowBackIos />  HOME
-                    </a>
+                    </Link>
                 </Grid>
                 <Grid item md={7} className={"mx-5"}>
                     <Stack  alignItems="center"  className="w-full py-5 my-5 testnet-item-group">

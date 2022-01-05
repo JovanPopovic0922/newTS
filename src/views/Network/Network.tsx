@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Button } from "@material-ui/core";
+import { Link } from "react-router-dom"
 import { Typography } from "@mui/material";
 import { Stack } from "@mui/material";
 import "./Network.css";
@@ -11,10 +12,10 @@ function Network(){
     return (
         <div className="networkBody">
           <Grid container spacing={3} justifyContent="flex-start" className="my-5 py-5" alignItems="flex-start">
-             <Grid item  md={2} className="my-5 py-5 homeBtn"  >
-                 <a href="/home"  >
+             <Grid item  md={2} className="my-5 py-5"  >
+                 <Link to="/home" className="homeBtn" >
                    <ArrowBackIos />  HOME
-                 </a>
+                 </Link>
              </Grid>
              <Grid item md={1}></Grid>
              <Grid container item sm={12} md={9}    className={"py-5 my-5 text-content"}>

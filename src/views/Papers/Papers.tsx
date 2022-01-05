@@ -4,15 +4,16 @@ import { Grid } from "@material-ui/core";
 import { Typography } from "@mui/material";
 import { Stack } from "@mui/material";
 import { ArrowBackIos } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 function Papers() {
     return (
            <div className="papers">
                 <Grid container spacing={3} justifyContent="flex-start" className="my-5 py-5" alignItems="flex-start">
-                    <Grid item  md={2} className="my-5 py-5 homeBtn"  >
-                        <a href="/home"  >
-                           <ArrowBackIos />  HOME
-                        </a>
+                    <Grid item  md={2} className="my-5 py-5"  >
+                        <Link to="/home" className="homeBtn" >
+                              <ArrowBackIos />  HOME
+                        </Link>
                     </Grid>
                     <Grid item md={2}></Grid>
                     <Grid container item md={8} xs={12} >
