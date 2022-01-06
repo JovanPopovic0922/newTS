@@ -89,7 +89,7 @@
     position: relative;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
     .homeBtn{
         display: none !important;
     }
@@ -101,6 +101,9 @@
         background-image: url("../../assets/responsive/svg/res-network.svg");
         overflow-y: hidden;
         overflow-x: hidden;
+    }
+    .text-core-font{
+        font-size: 13px !important;
     }
 
     .text-group-whereto{

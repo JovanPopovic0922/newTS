@@ -39,7 +39,7 @@ function Network(){
                 <Grid item  sm={3} md={3}  className="text-group-whereto"  >
                     <Stack alignItems="flex-start" spacing={{xs : 1, sm : 1, md : 2}}>
                         <Typography  className = "header-three">WHITE TO:</Typography>
-                        <Typography fontSize={{xs:"10px !important", sm:"10px"}} letterSpacing={{xs:"5px", sm:"8px"}}>CORE@HUMANODE.IO</Typography>
+                        <Typography className="text-core-font" letterSpacing={{xs:"5px", sm:"8px"}}>CORE@HUMANODE.IO</Typography>
                     </Stack>
                 </Grid>
                 <Grid item  sm={3} md={2} className="network-cross"  >

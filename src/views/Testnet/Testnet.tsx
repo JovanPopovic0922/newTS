@@ -17,7 +17,7 @@ function Testnet(){
                 <Grid item md={11}></Grid>
                 <Grid container md={12}  item justifyContent={"center"} alignItems={"flex-start"}>
                     <Stack alignItems="center" spacing={4}  className="w-full testnet-item-group">
-                        <Grid item  >
+                        <Grid item>
                             <Typography lineHeight={{xs:"0px",sm:"0px",md:"50px"}} letterSpacing={{xs: 5,sm:5, md:10}}>
                                 TESTNET
                             </Typography>
@@ -28,7 +28,7 @@ function Testnet(){
                         <Grid item >
                             <div className="vector-div"></div>
                         </Grid>  
-                        <Grid item>
+                        <Grid item className="mx-3">
                             <Typography lineHeight={{xs:"0px",sm:"0px",md:"50px"}} letterSpacing={{xs: 5,sm:5, md:10}} >
                                 MAINNET
                             </Typography>
@@ -42,7 +42,7 @@ function Testnet(){
                     </Stack>
                 </Grid>
                 <Grid item md={12} className="" justifyContent={"center"} alignItems={"flex-start"}  >
-                    <Typography lineHeight={{xs:"0px",sm:"0px",md:"50px"}} letterSpacing={{xs: 5, sm:5, md:13}}>
+                    <Typography lineHeight={{xs:"0px",sm:"0px",md:"50px"}} letterSpacing={{xs: 5, sm:5, md:12}}>
                        <h2 className="decen-one">FULL DECENTRALIZATION</h2> 
                        <h2 className="decen-two">FULLY <h2  style={{marginLeft:"8%"}}>DECENTRALIZED</h2></h2>
                        
