@@ -1,5 +1,5 @@
 .navbar{
-   padding:0 2.5%;
+   padding:0 5.5%;
    padding-top: -1%;
    display: flex;
    justify-content: space-between;
@@ -9,7 +9,6 @@
 .navbar-light .navbar-brand {
     color: hsl(0deg 0% 84%);
     font-family: 'Futura PT';
-    font-size: 16.5px;
 }
 .navbar-brand{
     letter-spacing: 8px;
@@ -23,16 +22,24 @@ a:active{
 a:focus{
     border-bottom: white 1px solid;
 }
-.about{
-     
+.about-network{
+    font-family: Futura PT;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0.5em;
     margin-right: 0px !important;
 }
-.network{
-  
-    margin-right: 0px !important;
-}
+
 .logo{
-   
+    font-family: Futura PT;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0.5em;
+    text-align: left;
     margin-right: 0px !important;
 }
 

@@ -21,19 +21,19 @@ function Network(){
              <Grid container item sm={12} md={9}    className={"py-5 my-5 text-content"}>
                 <Grid container item xs={12}  md={3} alignItems="center" className=" text-group-community" >
                     <Stack alignItems="flex-start"   spacing={{xs : 1, sm : 2, md : 3}} >
-                        <Typography className = "header-one">COMMUNITY:</Typography>
-                        <Typography letterSpacing={"8px"}>TWITTER</Typography>
-                        <Typography letterSpacing={"8px"}>TELEGRAM</Typography>
-                        <Typography letterSpacing={"8px"}>REDDIT</Typography>
-                        <Typography letterSpacing={"8px"}>GITHUB</Typography>
-                        <Typography letterSpacing={"8px"}>YOUTUBE</Typography>
+                        <Typography  className = "header-one">COMMUNITY:</Typography>
+                        <Typography>TWITTER</Typography>
+                        <Typography >TELEGRAM</Typography>
+                        <Typography >REDDIT</Typography>
+                        <Typography >GITHUB</Typography>
+                        <Typography >YOUTUBE</Typography>
                     </Stack>
                 </Grid>
                 <Grid item xs={12} sm={3}  md={2}  className="text-group-update" >
                     <Stack alignItems="flex-start" spacing={{xs : 1, sm : 2, md : 3}}>
                         <Typography className = "header-two">UPDATES:</Typography>
-                        <Typography letterSpacing={"8px"}>BLOG</Typography>
-                        <Typography letterSpacing={"8px"}>FORUM</Typography>
+                        <Typography >BLOG</Typography>
+                        <Typography >FORUM</Typography>
                     </Stack>
                 </Grid>
                 <Grid item xs={12} sm={3} md={3}  className="text-group-whereto"  >
