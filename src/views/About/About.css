@@ -50,7 +50,7 @@
     display: none;
 }
 
-@media (max-width:960px) {
+@media (max-width:768px) {
     .aboutBody{
         background-image: url("../../assets/responsive/svg/res-network.svg");
         overflow-y: hidden;

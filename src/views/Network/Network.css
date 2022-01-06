@@ -90,6 +90,12 @@
 }
 
 @media (max-width: 960px) {
+    .homeBtn{
+        display: none !important;
+    }
+    .network-cross{
+        display: block !important;
+    }
 
     .networkBody{
         background-image: url("../../assets/responsive/svg/res-network.svg");
@@ -97,32 +103,30 @@
         overflow-x: hidden;
     }
 
-    .homeBtn{
-        display: none !important;
+    .text-group-whereto{
+        position: absolute;
+        left : calc(44% - 100px/2);
+        top: calc(30% - 120px/2 + 270px);
     }
 
-    .network-cross{
-       display: block !important;
+
+    .text-content{
+        direction: "column" !important;
     }
 
     .text-group-community{
         position: absolute;
         left : calc(44% - 100px/2);
-        top: 200px;
+        top: calc(30% - 120px/2);
     }
 
     .text-group-update{
         position: absolute;
         left : calc(44% - 100px/2);
-        top: 430px;
-    }
-
-    .text-group-whereto{
-        position: absolute;
-        left : calc(44% - 100px/2);
-        top: 545px;
+        top: calc(30% - 120px/2 + 180px);
     }
 }
+
 .networkBody p{
     font-size: 18px;
     font-style: normal;

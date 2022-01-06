@@ -9,7 +9,7 @@ function Navbar() {
       <Link className="navbar-brand about-network" to="/about">
         ABOUT
       </Link>
-      <Link className="navbar-brand logo mx-5"  to="/">
+      <Link className="navbar-brand logo mx-2"  to="/">
          <Logo />
       </Link>
       <Link className="navbar-brand about-network" to="/network">

@@ -14,25 +14,25 @@ function Testnet(){
                         <ArrowBackIos />  HOME
                     </Link>
                 </Grid>
-                <Grid item md={2}></Grid>
-                <Grid container md={8} item   className="mx-5 px-5 ">
-                    <Stack alignItems="center" spacing={4}  direction={{xs:"column", sm:"column", md:"row"}} className="w-full testnet-item-group">
+                <Grid item md={11}></Grid>
+                <Grid container md={12}  item justifyContent={"center"} alignItems={"flex-start"}>
+                    <Stack alignItems="center" spacing={4}  className="w-full testnet-item-group">
                         <Grid item  >
-                            <Typography letterSpacing={{xs: 5,sm:5, md:10}}>
+                            <Typography lineHeight={{xs:"0px",sm:"0px",md:"50px"}} letterSpacing={{xs: 5,sm:5, md:10}}>
                                 TESTNET
                             </Typography>
-                            <Typography letterSpacing={{xs: 5,sm:5, md:10}}  style={{opacity:"37%"}} >
+                            <Typography letterSpacing={{xs: 5,sm:5, md:10}}  lineHeight={{xs:'40px', sm:'40px', md:"15px"}}  style={{opacity:"37%"}} >
                                 OCT 2021
                             </Typography>
                         </Grid>
                         <Grid item >
                             <div className="vector-div"></div>
-                        </Grid>
-                        <Grid item >
-                            <Typography letterSpacing={{xs: 5,sm:5, md:10}} >
+                        </Grid>  
+                        <Grid item>
+                            <Typography lineHeight={{xs:"0px",sm:"0px",md:"50px"}} letterSpacing={{xs: 5,sm:5, md:10}} >
                                 MAINNET
                             </Typography>
-                            <Typography letterSpacing={{xs: 5,sm:5, md:10}} style={{opacity:"37%"}} >
+                            <Typography letterSpacing={{xs: 5,sm:5, md:10}}  lineHeight={{xs:'40px', sm:'40px', md:"15px"}}   style={{opacity:"37%"}} >
                                 JUN 2022
                             </Typography>
                         </Grid>
@@ -41,24 +41,26 @@ function Testnet(){
                         </Grid>
                     </Stack>
                 </Grid>
-                <Grid item md={8} className="testnet-full-group" marginTop={"120px"} >
-                    <Typography letterSpacing={{xs: 5,sm:5, md:16}}>
-                        FULL DECENTRALIZATION
+                <Grid item md={12} className="" justifyContent={"center"} alignItems={"flex-start"}  >
+                    <Typography lineHeight={{xs:"0px",sm:"0px",md:"50px"}} letterSpacing={{xs: 5, sm:5, md:13}}>
+                       <h2 className="decen-one">FULL DECENTRALIZATION</h2> 
+                       <h2 className="decen-two">FULLY <h2  style={{marginLeft:"8%"}}>DECENTRALIZED</h2></h2>
+                       
                     </Typography>
-                    <Typography letterSpacing={{xs: 5,sm:5, md:10}}  style={{opacity:"37%"}} >
+                    <Typography className="text-jun" letterSpacing={{xs: 5,sm:5, md:10}} lineHeight={{xs:'40px', sm:'40px', md:"15px"}} >
                         JUN 2026
                     </Typography>
-                    <Button variant="outlined" style={{width:"250px", height:"70px",marginTop:"10px"}} color="inherit">
+                    <Button variant="outlined" className="seemoreBtn"  color="inherit">
                         <span className="">See More</span>
                     </Button>
                 </Grid>
-                <Grid item xs={12} sm={3} md={2} className="path-cross"  >
-                        <Typography   letterSpacing={5}>
+                <Grid item xs={12} className="path-cross"  >
+                        <Typography className="path-cross-text" letterSpacing={10}>
                              PATH
                         </Typography><br/>
                         <CloseOutlinedIcon sx={{fontSize:50}}/>
                 </Grid>
-                <Grid  className="home-indicator">
+                 < Grid  className="home-indicator">
                     
                 </Grid>
             </Grid>
@@ -66,53 +68,3 @@ function Testnet(){
     )
 }
 export default Testnet;
-
-
-// <Grid item>
-// <Grid container item className="my-5 py-3 testnet-item-group" direction={{ sm:"column", md:"row"}}  justifyContent="center">
-//     <Grid item >
-//         <Typography letterSpacing={{xs: 5,sm:5, md:10}}>
-//             TESTNET
-//         </Typography>
-//         <Typography letterSpacing={{xs: 5,sm:5, md:10}} lineHeight={"4"} style={{opacity:"37%"}} >
-//             OCT 2021
-//         </Typography>
-//     </Grid>
-//     <Grid item >
-//         <div className="vector-div"></div>
-//     </Grid>
-//     <Grid item xs >
-//         <Typography letterSpacing={{xs: 5,sm:5, md:10}} >
-//             MAINNET
-//         </Typography>
-//         <Typography letterSpacing={{xs: 5,sm:5, md:10}} lineHeight={"4"} style={{opacity:"37%"}} className="opacity-20" >
-//             JUN 2022
-//         </Typography>
-//     </Grid>
-//     <Grid item >
-//         <div className="vector-div-toogle"></div>
-//     </Grid>
-// </Grid>
-// </Grid>
-// <Grid item md={12} alignItems={"center"} marginTop={"-50px"} justifyContent={"center"} >
-// <Typography letterSpacing={{xs: 5,sm:5, md:15}}>
-//     FULL DECENTRALIZATION
-// </Typography>
-// <Typography  letterSpacing={{xs: 5,sm:5, md:10}}  style={{opacity:"37%"}} >
-//     JUN 2026
-// </Typography>
-// <Button variant="outlined" style={{width:"250px", height:"70px"}} color="inherit">
-//     <span className="">See More</span>
-// </Button>
-// </Grid>
-// <Grid item xs={12} md={2}  >
-// <div className="path-cross">
-//     <Typography letterSpacing={10}>
-//         PATH
-//     </Typography>
-//     <CloseOutlinedIcon sx={{fontSize:50}}/>
-// </div>
-// </Grid>
-// <Grid item className="home-indicator">
-
-// </Grid>

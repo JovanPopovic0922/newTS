@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     top: 0px;
     bottom: 0px;
     color: hsl(0deg 0% 84%) !important;
@@ -13,39 +14,33 @@
 .vector-div{
     width: 86px;
     height: 86px;
+    margin-top: -20px;
     background-image: url("../../assets/svg/testnet-vector.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .vector-div-toogle{
     width: 29px;
     height: 29px;
     background-image: url("../../assets/responsive/svg/res-tesnet-vector.svg");
-    display: none;
+    display: none !important;
 }
 
-.testnet-item-group{
-    position: absolute;
-    top: 150px;
-    left : calc(40% - 220px/2);
-}
-.testnet-full-group{
-    position: absolute;
-    left : calc(40% - 260px/2);
-}
 .path-cross{
     width: auto;
     display: none !important;
     font-weight: 100;
-    position: absolute;
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 30px;
     left: calc(40% - 40px/2);
 }
-.testnet p{
+
+.testnet {
     font-family: "Futura PT";
     font-size: 21px;
     font-style: normal;
@@ -55,11 +50,59 @@
     text-align: center;
 }
 
-@media (max-width:960px) {
+.testnet div{
+    padding: 0px !important;
+    display: inline-block;
+}
+
+.testnet-item-group{
+    margin-top: 100px;
+    display: inline-block !important;
+}
+
+.testnet p{
+    font-family: "Futura PT";
+}
+
+.seemoreBtn{
+    width:250px;
+    height:70px;
+    margin-top:20px !important;
+    border-radius: 0px !important;
+}
+
+.decen-one{
+    display: inline;
+}
+
+.decen-two{
+    display: none;
+}
+
+.text-jun{
+    opacity: 37% ;
+}
+
+@media (max-width:768px) {
     .testnet{
         background-image: url("../../assets/responsive/svg/res-network.svg");
         overflow-y: hidden;
         overflow-x: hidden;
+    }
+    .text-jun{
+        margin-left: 8% !important;
+    }
+    .decen-one{
+        display: none;
+    }
+    .decen-two{
+        display: inline-table;
+        margin-left: 5%;
+    }
+    .seemoreBtn{
+        width: 40%;
+        height: 40px;
+        margin-left: 5% !important;
     }
     .testnet p{
         font-size: 14px;
@@ -67,24 +110,49 @@
     .vector-div{
         width: 29px;
         height: 29px;
+        margin-left: 32%;
         background-image: url("../../assets/responsive/svg/res-tesnet-vector.svg");
+    }
+    .testnet div{
+        display: block;
     }
     .vector-div-toogle{
         display: block !important;
+        margin-top: -17%;
+        margin-left: 32%;
+        margin-bottom: 35%;
+    }
+
+    .testnet-full-group{
+        position: relative;
+        margin-left: 5%;
     }
     .testnet-item-group{
-        position: absolute;
-        left : calc(46% - 80px/2);
-    }
-    .testnet-full-group{
-        position: absolute;
-        left : calc(46% - 320px/2);
-        bottom : 210px !important;
+        position: relative;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
     }
 }
 
-@media (max-width: 960px) {
+h2{
+    font-size: 16px;
+}
+.path-cross-text{
+    position: absolute;
+    bottom: 60px;
+}
+
+@media (max-width: 768px) {
     .path-cross{
+        position: absolute;
         display: block !important;
+        left: calc(50% - 68px/2);
+        bottom: 20px;
+    }
+    h2{
+        font-size: 13px;
     }
 }
+
