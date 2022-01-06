@@ -43,7 +43,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 30px;
-    left: calc(44% - 40px/2);
+    left: calc(40% - 40px/2);
 }
 .testnet p{
     font-family: "Futura PT";
