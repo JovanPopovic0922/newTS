@@ -56,7 +56,10 @@
 
 @media (max-width:768px) {
     .seemore{
-        background-image: url("../../assets/mobile/svg/background/network-back.svg");
+        background-image: url("../../assets/mobile/svg/background/vector-back.svg");
+        background-size: contain !important;
+        background-position: center center;
+        transition: all 0.5s ease;
         overflow-y: hidden;
         overflow-x: hidden;
     }

@@ -49,6 +49,15 @@
     line-height: 3 !important;
 }
 
+.side-head{
+    position: absolute;
+    height: 50%;
+    left: 2rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 .homeBtn{
     position: fixed;
     letter-spacing: 10;
@@ -100,7 +109,11 @@
         line-height: 1 !important;
     }
     .network-content{
-        background-image: url("../../assets/mobile/svg/background/network-back.svg");
+        background-image: url("../../assets/mobile/svg/background/vector-back.svg");
+        background-size: contain !important;
+        background-color: #262626 !important;
+        background-position: center !important;
+        transition: all 0.5s ease;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -112,21 +125,22 @@
         position: absolute;
         font-size: 16px !important;
         left : calc(44% - 100px/2);
-        top: calc(24% - 80px/2);
+        top: calc(28% - 80px/2);
     }
 
     .item-group-update{
         position: absolute;
         font-size: 16px !important;
         left : calc(44% - 100px/2);
-        top: calc(24% - 80px/2 + 170px);
+        top: calc(28% - 80px/2 + 170px);
     }
 
     .item-group-whereto{
         position: absolute;
+        display: inline-block;
         font-size: 16px !important;
         left : calc(44% - 100px/2);
-        top: calc(24% - 68px/2 + 262px);
+        top: calc(28% - 68px/2 + 262px);
     }
 
     .title-bottom{
@@ -153,4 +167,10 @@
 .network-content p{
     font-size: 24px;
     letter-spacing: 8px !important;
+}
+
+@media (max-width:768px) {
+    .side-head{
+        display: block !important;
+    }
 }

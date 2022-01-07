@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: #262626 !important;
     background-image: url("../../assets/desktop/svg/background/papers-back.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -63,7 +64,10 @@
 
 @media (max-width:768px) {
     .papers{
-        background-image: url("../../assets/mobile/svg/background/papers-back.svg");
+        background-image: url("../../assets/mobile/svg/background/vector-back.svg");
+        background-size: contain !important;
+        background-position: center center;
+        transition: all 0.5s ease;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -74,13 +78,13 @@
         position: absolute;
         font-size: 16px !important;
         left : calc(44% - 100px/2);
-        top: calc(30% - 170px/2);
+        top: calc(34% - 170px/2);
     }
     .item-tldr{
         position: absolute;
         font-size: 16px !important;
         left : calc(44% - 100px/2);
-        top: calc(30% + 180px/2);
+        top: calc(34% + 100px/2);
     }
     .title-papers{
         font-size: 16px !important;

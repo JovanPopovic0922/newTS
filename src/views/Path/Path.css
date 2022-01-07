@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    background-color: #262626 !important;
     background-image: url("../../assets/desktop/svg/background/path-back.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -87,7 +88,6 @@
 .seemoreBtn{
     width:250px;
     height:70px;
-    margin-top:20px !important;
     border-radius: 0px !important;
 }
 
@@ -101,7 +101,10 @@
 
 @media (max-width:768px) {
     .path{
-        background-image: url("../../assets/mobile/svg/background/papers-back.svg");
+        background-image: url("../../assets/mobile/svg/background/vector-back.svg");
+        background-size: contain !important;
+        background-position: center center;
+        transition: all 0.5s ease;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -109,6 +112,7 @@
     .title-path, .subtitle-path{
         font-size: 16px !important;
         text-align: center !important;
+        /* padding: 3%; */
     }
 
     .decen-one{
@@ -123,18 +127,20 @@
     }
 
     .seemoreBtn{
-        width: 40%;
-        height: 10%;
         margin-left: 5% !important;
     }
 
     .item-decen{
-        margin-top: -10% !important;
+        position: absolute;
+        left: 48%;
+        bottom: 20%;
+        transform: translate(-50%);
     }
     
     .vector-div{
         width: 29px;
         height: 29px;
+        margin-top: 34px;
         margin-left: 39%;
         background-image: url("../../assets/mobile/svg/icon/path-vector.svg");
     }
@@ -143,9 +149,9 @@
     }
     .vector-div-toogle{
         display: block !important;
-        margin-top: -17%;
+        /* margin-top: -17%; */
         margin-left: 39%;
-        margin-bottom: 35%;
+        /* margin-bottom: 35%; */
     }
 
     .path-full-group{
@@ -153,11 +159,9 @@
         margin-left: 5%;
     }
     .path-item-group{
-        position: relative;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5%;
+        position: absolute;
+        bottom: 46%;
+        left: calc(50% - 160px/2);
     }
 }
 
@@ -166,18 +170,22 @@ h2{
 }
 .path-cross-text{
     position: absolute;
-    bottom: 60px;
+    bottom: 68px;
 }
 
 @media (max-width: 768px) {
     .path-cross{
         position: absolute;
         display: block !important;
-        left: calc(50% - 68px/2);
         bottom: 20px;
     }
     h2{
         font-size: 16px;
+    }
+    .seemoreBtn{
+        position: absolute;
+        bottom: 30% !important;
+        /* margin-top: 20% !important; */
     }
 }
 

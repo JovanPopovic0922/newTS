@@ -4,6 +4,7 @@ import { Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom"
 import { dotExplain } from "../../constants/dotExplain";    
 import { ArrowBackIos } from "@mui/icons-material";
+import SideHead from "../../assets/mobile/img/background/side-head.png"
 
 function Seemore(){
 
@@ -16,6 +17,7 @@ function Seemore(){
     return (
         <div className="seemore">
           <Grid container spacing={3} justifyContent="flex-start" className="my-5 py-5" alignItems="flex-start">
+            <img className = "side-head" src={SideHead} alt="sidehead"></img>
             <Grid item  md={1} className="my-5 py-5"  >
                  <Link to="/home" className="homeBtn" >
                    <ArrowBackIos />  HOME
@@ -101,7 +103,7 @@ function Seemore(){
                     </defs>
                    </svg>
                 </Grid>
-                <Grid item xs={12} md={2}  >
+                <Grid item xs={12} md={2} component ={ Link } to="/path" >
                     <div className="seemore-cross">
                         <Typography letterSpacing={"6px"}>
                             PATH IN DETAIL

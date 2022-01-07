@@ -6,11 +6,13 @@ import { Stack } from "@mui/material";
 import { ArrowBackIos } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import SideHead from "../../assets/mobile/img/background/side-head.png"
 
 function Papers() {
     return (
            <div className="papers">
                 <Grid container justifyContent="flex-start" className="my-3 py-5" alignItems="flex-start">
+                    <img className = "side-head" src={SideHead} alt="sidehead"></img>
                     <Grid item  spacing={3} md={2} className="my-5 py-5"  >
                         <Link to="/home" className="homeBtn" >
                               <ArrowBackIos />  HOME
@@ -34,7 +36,7 @@ function Papers() {
                             </Stack>
                         </Grid>
                     </Grid>
-                    <Grid item   sm={3} md={2} className="papers-cross"  >
+                    <Grid item sm={3} md={2} className="papers-cross" component ={ Link } to="/home"  >
                         <Typography className="title-bottom" letterSpacing={5}>
                              PAPERS
                         </Typography><br/>

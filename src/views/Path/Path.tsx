@@ -4,11 +4,13 @@ import { Button, Grid, Stack, Typography} from "@mui/material";
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import { ArrowBackIos } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import SideHead from "../../assets/mobile/img/background/side-head.png"
 
 function Path(){
     return (
         <div className="path">
             <Grid container spacing={5} className="my-5 py-5" >
+               <img className = "side-head" src={SideHead} alt="sidehead"></img>
                 <Grid item md={1}>
                     <Link to="/home"  className="homeBtn">
                         <ArrowBackIos />  HOME
@@ -54,8 +56,8 @@ function Path(){
                         <span className="">See More</span>
                     </Button>
                 </Grid>
-                <Grid item xs={12} className="path-cross"  >
-                        <Typography className="path-cross-text" letterSpacing={10}>
+                <Grid item xs={12} className="path-cross" component ={ Link } to="/home" >
+                        <Typography className="path-cross-text">
                              PATH
                         </Typography><br/>
                         <CloseOutlinedIcon sx={{fontSize:50}}/>

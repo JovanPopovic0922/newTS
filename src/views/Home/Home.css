@@ -74,7 +74,8 @@
     }
     .home{
         background-image: url("../../assets/mobile/img/background/main-back.png");
-        background-position: left;
+        background-position: center center;
+        transition: all 0.5s ease;
         background-repeat: no-repeat;
         background-size: cover;
     }

@@ -6,16 +6,19 @@ import { Stack } from "@mui/material";
 import "./Network.css";
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import { ArrowBackIos } from "@mui/icons-material";
+import SideHead from "../../assets/mobile/img/background/side-head.png"
 
 
 function Network(){
     return (
         <div className="network-content">
           <Grid container spacing={3} justifyContent="flex-start" className="my-2 py-3" alignItems="flex-start">
+             <img className = "side-head" src={SideHead} alt="sidehead"></img>
              <Grid item   md={2}  className="my-5 py-5"  >
                  <Link to="/home" className="homeBtn" >
                    <ArrowBackIos />  HOME
                  </Link>
+                
              </Grid>
              <Grid container item  md={10}    className={"py-5 my-5 text-content"}>
                 <Grid container item md={3}  alignItems="center" className=" item-group-community" >
@@ -41,7 +44,7 @@ function Network(){
                         <a target={"_blank"} rel="noreferrer noopener" href="mailto:core@humanode.io" className="text-core-font">CORE@HUMANODE.IO</a>
                     </Stack>
                 </Grid>
-                <Grid item  sm={3} md={2} className="network-cross"  >
+                <Grid item  sm={3} md={2} className="network-cross" component ={ Link } to="/home"  >
                         <Typography className="title-bottom" letterSpacing={5}>
                              NETWORK
                         </Typography><br/>
