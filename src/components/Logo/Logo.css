@@ -1,6 +1,6 @@
 .logo-image{
-    width: 67px;
-    height: 67px;
+    width: 53px;
+    height: 46px;
     background-image: url("../../assets/img/logo/logo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,8 @@
 
 @media (max-width:700px) {
     .logo-image{
-        width: 43px;
-        height: 43px;
+        height: 21px;
+        width: 24px;
+        border-radius: 0px;
     }
 }

@@ -1,9 +1,9 @@
-.networkBody{
+.network-content{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../../assets/img/back/head-eye.png");
-    background-position: center;
+    background-image: url("../../assets/desktop/img/background/common-back.png");
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -13,7 +13,7 @@
     color: white;
 }
 
-.header-one{
+.title-community{
     background-color: #F8C16C;
     background-image: linear-gradient(45deg, #DF7646, #F8C16C);
     background-size: 100%;
@@ -22,9 +22,10 @@
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     letter-spacing: 8px !important;
+    line-height: 3 !important;
 }
 
-.header-two{
+.title-updates{
     background-color: #F8C16C;
     background-image: linear-gradient(45deg, #EA9757, #F8C16C);
     background-size: 100%;
@@ -33,9 +34,10 @@
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     letter-spacing: 8px !important;
+    line-height: 3 !important;
 }
 
-.header-three{
+.title-whereto{
     background-color: #F8C16C;
     background-image: linear-gradient(45deg, #F8C16C, #E3804B);
     background-size: 100%;
@@ -44,6 +46,7 @@
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     letter-spacing: 8px !important;
+    line-height: 3 !important;
 }
 
 .homeBtn{
@@ -71,34 +74,33 @@
     left: calc(44% - 80px/2);
 } 
 
-.text-group-community{
-    position: relative;
-    font-family: Futura PT;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 32px;
-    text-align: left;
+.item-group-community{
+    position: absolute;
+    left: 18%;
 }
 
-.text-group-update{
-    position: relative;
+.item-group-update{
+    position: absolute;
+    left: calc(45% - 156px/2 );
 }
 
-.text-group-whereto{
-    position: relative;
+.item-group-whereto{
+    position: absolute;
+    right: 17%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1240px) {
     .homeBtn{
         display: none !important;
     }
     .network-cross{
         display: block !important;
     }
-
-    .networkBody{
-        background-image: url("../../assets/responsive/svg/res-network.svg");
+    .title-community, .title-updates, .title-whereto{
+        line-height: 1 !important;
+    }
+    .network-content{
+        background-image: url("../../assets/mobile/svg/background/network-back.svg");
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -106,36 +108,49 @@
         font-size: 13px !important;
     }
 
-    .text-group-whereto{
+    .item-group-community{
         position: absolute;
+        font-size: 16px !important;
         left : calc(44% - 100px/2);
-        top: calc(30% - 120px/2 + 270px);
+        top: calc(24% - 80px/2);
     }
 
+    .item-group-update{
+        position: absolute;
+        font-size: 16px !important;
+        left : calc(44% - 100px/2);
+        top: calc(24% - 80px/2 + 170px);
+    }
+
+    .item-group-whereto{
+        position: absolute;
+        font-size: 16px !important;
+        left : calc(44% - 100px/2);
+        top: calc(24% - 68px/2 + 262px);
+    }
+
+    .title-bottom{
+        margin-bottom: -8px !important;
+        font-size: 16px !important;
+    }
 
     .text-content{
         direction: "column" !important;
+        padding: 0px;
+        display: block !important;
     }
-
-    .text-group-community{
-        position: absolute;
-        left : calc(44% - 100px/2);
-        top: calc(30% - 120px/2);
-    }
-
-    .text-group-update{
-        position: absolute;
-        left : calc(44% - 100px/2);
-        top: calc(30% - 120px/2 + 180px);
+    
+    .network-content p{
+        font-size: 16px !important;
     }
 }
 
-.networkBody p{
-    font-size: 18px;
-    font-style: normal;
-    line-height: 21px !important;
-    font-weight: 300 !important;
-    font-family: "Futura PT" !important;
-    color: white !important;
+.item-group-community, .item-group-update, .item-group-whereto a{
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+
+.network-content p{
+    font-size: 24px;
     letter-spacing: 8px !important;
 }

@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 function Navbar() {
    return(
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand about-network" to="/about">
+      <a className="navbar-brand about-network" rel="noreferrer noopener" href="https://papers.humanode.io/deck.pdf">
         ABOUT
-      </Link>
+      </a>
       <Link className="navbar-brand logo mx-2"  to="/">
          <Logo />
       </Link>

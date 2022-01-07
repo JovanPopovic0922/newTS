@@ -5,9 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from './components/Navbar/Navbar';
 import Home from './views/Home/Home';
-import About from './views/About/About';
+import Seemore from './views/Seemore/Seemore';
 import Papers from './views/Papers/Papers';
-import Testnet from './views/Testnet/Testnet';
 import Path from './views/Path/Path';
 import Network from './views/Network/Network';
 
@@ -19,10 +18,9 @@ function App() {
         <Route path={"/"} element={<Home />} />
         <Route path={"/home"} element={<Home />} />
         <Route path={"/path"} element={<Path />} />
-        <Route path={"/about"} element={<About />} />
+        <Route path={"/seemore"} element={<Seemore />} />
         <Route path={"/network"} element={<Network />} />
         <Route path={"/papers"} element={<Papers />} />
-        <Route path={"/testnet"} element={<Testnet />} />
       </Routes>
     </div>
   );

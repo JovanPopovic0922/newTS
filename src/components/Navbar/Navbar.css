@@ -1,29 +1,19 @@
 .navbar{
-   padding:1% 5.5%;
+   padding:0% 3.5%;
    display: flex;
    justify-content: space-between;
    background-color: #1d1d1d00 !important;
+   font-family: 'Futura PT';
    z-index: 10000 !important;
 }
-.navbar-light .navbar-brand {
-    color: hsl(0deg 0% 84%);
-    font-family: 'Futura PT';
-}
-.navbar-brand{
-    letter-spacing: 8px;
-}
+
 a{
     color: hsl(0deg 0% 84%)!important;
 }
-a:active{
-    border-bottom: white 1px solid;
-}
-a:focus{
-    border-bottom: white 1px solid;
-}
+
 .about-network{
     font-family: Futura PT;
-    font-size: 17px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 31px;
@@ -33,7 +23,7 @@ a:focus{
 
 .logo{
     font-family: Futura PT;
-    font-size: 19px;
+    font-size: 27px;
     font-style: normal;
     font-weight: 300;
     line-height: 35px;
@@ -43,14 +33,24 @@ a:focus{
 }
 
 @media (max-width:700px) {
-   .navbar-light .navbar-brand{
-     font-size: 13px !important;
-     letter-spacing: 4px !important;
+   .about-network{
+        font-family: Futura PT;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0.3em;
+        text-align: left;
    }
    .navbar{
-       padding : 0 2%;
+       padding : 0% 2%;
        margin-left: 0;
        justify-content: space-between !important;
    }
-   
+   .logo{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+   }
 }

@@ -23,4 +23,15 @@ body {
   /* background-image: url('./assets/img/back/head-top.png');   */
 
 }
+p{
+  font-family: Futura PT !important;
+  font-size: 24px ;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.5em;
+  text-align: left;
+  color: white !important;
+  letter-spacing: 8px !important;
+}
 
