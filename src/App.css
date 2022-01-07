@@ -29,11 +29,13 @@
   color: white;
 }
 
+a:-webkit-any-link{
+  text-decoration: none !important;
+}
+
+
 .App-link {
   color: #61dafb;
-}
-a{
-  text-decoration: none !important;
 }
 
 @keyframes App-logo-spin {

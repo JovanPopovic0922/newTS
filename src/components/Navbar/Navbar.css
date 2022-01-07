@@ -1,5 +1,5 @@
 .navbar{
-   padding:0% 3.5%;
+   padding:2% 5.5%;
    display: flex;
    justify-content: space-between;
    background-color: #1d1d1d00 !important;
@@ -39,11 +39,10 @@ a{
         font-style: normal;
         font-weight: 300;
         line-height: 17px;
-        letter-spacing: 0.3em;
         text-align: left;
    }
    .navbar{
-       padding : 0% 2%;
+       padding: 4% 3.5%;
        margin-left: 0;
        justify-content: space-between !important;
    }
