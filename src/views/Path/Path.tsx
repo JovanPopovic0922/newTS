@@ -17,8 +17,8 @@ function Path(){
                     </Link>
                 </Grid>
                 <Grid item md={11}></Grid>
-                <Grid container md={12}  item justifyContent={"center"} alignItems={"flex-start"}>
-                    <Stack alignItems="center" spacing={4}  className="w-full path-item-group">
+                <Grid container  md={12} item justifyContent={"center"} alignItems={"flex-start"}>
+                    <Stack alignItems="center" spacing={4}  className="path-item-group">
                         <Grid item>
                             <Typography className="title-path">
                                 TESTNET
