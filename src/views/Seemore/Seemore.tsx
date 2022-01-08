@@ -15,7 +15,7 @@ function Seemore(){
     }
 
     return (
-        <div className="seemore">
+        <div className="seemore-content">
           <Grid container spacing={3} justifyContent="flex-start" className="my-5 py-5" alignItems="flex-start">
             <img className = "side-head" src={SideHead} alt="sidehead"></img>
             <Grid item  md={1} className="my-5 py-5"  >
@@ -28,27 +28,27 @@ function Seemore(){
                     <Typography width="350px" className="dot-text" marginLeft="35%" height="70px" fontSize={13} align="left" style={{wordWrap:"break-word"}}>
                         {text}
                     </Typography>
-                    <Grid item className="gradient-text"  fontSize={13}>
+                    <Grid item className="gradient-text">
                        <Typography className="indiv-text" >
-                           Sybil-resistance based on de-centralized pseudonymous biometric identities<br/>
+                           {dotExplain[0]}<br/>
                        </Typography>
                        <Typography className="indiv-text" >
-                           secure, scalable, efficient, consistent, immutable, and sustainable Substrate mechanism
+                            {dotExplain[1]}<br/>
                        </Typography>
                        <Typography   className="indiv-text">
-                           creation, proliferation, and development of a strong and dedicated community of human nodes
+                           {dotExplain[2]}<br/>
                        </Typography>
                        <Typography   className="indiv-text">
-                           custom low-latency high-throughput Sybil-resistant consensus protocol
+                            {dotExplain[3]}<br/>
                        </Typography>
                        <Typography className="indiv-text">
-                           privacy-preserving biometric processing protocols
+                           {dotExplain[4]}<br/> 
                        </Typography>
                        <Typography className="indiv-text">
-                           distributed encrypted biometric templates matching
+                            {dotExplain[5]}<br/>
                        </Typography>
                        <Typography className="indiv-text">
-                           ZK-proven liveness check
+                            {dotExplain[6]}<br/>
                        </Typography>
                     </Grid>
                 </Grid>

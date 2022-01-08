@@ -10,7 +10,7 @@ import SideHead from "../../assets/mobile/img/background/side-head.png"
 
 function Papers() {
     return (
-           <div className="papers">
+           <div className="papers-content">
                 <Grid container justifyContent="flex-start" className="my-3 py-5" alignItems="flex-start">
                     <img className = "side-head" src={SideHead} alt="sidehead"></img>
                     <Grid item  spacing={3} md={2} className="my-5 py-5"  >
@@ -43,7 +43,6 @@ function Papers() {
                         <CloseOutlinedIcon sx={{fontSize:50}}/>
                     </Grid>
                     <Grid item className="home-indicator">
-                        
                     </Grid>
                 </Grid>
            </div>

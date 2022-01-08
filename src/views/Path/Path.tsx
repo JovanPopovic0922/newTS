@@ -8,7 +8,7 @@ import SideHead from "../../assets/mobile/img/background/side-head.png"
 
 function Path(){
     return (
-        <div className="path">
+        <div className="path-content">
             <Grid container spacing={5} className="my-5 py-5" >
                <img className = "side-head" src={SideHead} alt="sidehead"></img>
                 <Grid item md={1}>

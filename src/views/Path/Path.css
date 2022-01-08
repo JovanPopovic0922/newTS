@@ -1,4 +1,4 @@
-.path{
+.path-content{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -41,18 +41,8 @@
     left: calc(40% - 40px/2);
 }
 
-.path {
-    font-family: "Futura PT";
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 2;
-    letter-spacing: 0.5em;
-    text-align: center;
-}
-
-.path div{
-    padding: 0px !important;
+.path-content div{
+    padding:0px !important;
     display: inline-block;
 }
 
@@ -61,27 +51,18 @@
     display: inline-block !important;
 }
 
-.path p{
-    font-family: "Futura PT";
-}
-
 .title-path{
-    font-family: Futura PT;
     font-size: 30px !important;
     font-style: normal;
     font-weight: 300;
     line-height: 38px;
-    letter-spacing: 0.5em;
-    text-align: left;
 }
 
 .subtitle-path{
-    font-family: Futura PT;
     font-size: 27px !important;
     font-style: normal;
     font-weight: 300;
     line-height: 35px;
-    letter-spacing: 0.5em;
     text-align: center;
     opacity: 27%;
 }
@@ -100,7 +81,7 @@
 }
 
 @media (max-width:768px) {
-    .path{
+    .path-content{
         background-image: url("../../assets/mobile/svg/background/vector-back.svg");
         background-size: contain !important;
         background-position: center center;
@@ -144,14 +125,12 @@
         margin-left: 39%;
         background-image: url("../../assets/mobile/svg/icon/path-vector.svg");
     }
-    .path div{
+    .path-content div{
         display: block;
     }
     .vector-div-toogle{
         display: block !important;
-        /* margin-top: -17%; */
         margin-left: 39%;
-        /* margin-bottom: 35%; */
     }
 
     .path-full-group{
@@ -185,7 +164,6 @@ h2{
     .seemoreBtn{
         position: absolute;
         bottom: 30% !important;
-        /* margin-top: 20% !important; */
     }
 }
 
