@@ -1,7 +1,7 @@
 .logo-image{
     width: 53px;
     height: 46px;
-    background-image: url("../../assets/img/logo/logo.png");
+    background-image: url("../../../public/logo.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
