@@ -1,5 +1,0 @@
-/*    /index.html    200
-
-Now save, commit, push and publish. :)
-
-Reason for "Not Found" is because, when using router eg: React Router it handles all the routes but when you directly goto an endpoint, netlify must know where to redirect you. That is what we are specifying in the _redirects file.
