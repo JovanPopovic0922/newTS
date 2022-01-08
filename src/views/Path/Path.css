@@ -98,7 +98,7 @@
     }
 
     .decen-one{
-        display: none;
+        display: none !important;
     }
     .decen-two{
         display: inline-table;
@@ -114,15 +114,14 @@
 
     .item-decen{
         position: absolute;
-        left: 48%;
+        left: 50%;
         bottom: 20%;
-        transform: translate(-50%);
+        transform: translate(-63%);
     }
     
     .vector-div{
         width: 29px;
         height: 29px;
-        margin-top: 34px;
         margin-left: 40%;
         background-image: url("../../assets/mobile/svg/icon/path-vector.svg");
     }
@@ -132,6 +131,7 @@
     .vector-div-toogle{
         display: block !important;
         margin-left: 40%;
+        margin-top: -17px;
     }
 
     .path-full-group{

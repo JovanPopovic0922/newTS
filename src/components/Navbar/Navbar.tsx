@@ -9,7 +9,7 @@ function Navbar() {
       <a className="navbar-brand about-network" rel="noreferrer noopener" href="https://papers.humanode.io/deck.pdf">
         ABOUT
       </a>
-      <Link className="navbar-brand logo mx-2"  to="/">
+      <Link className="navbar-brand logo mx-2"  to="/home">
          <Logo />
       </Link>
       <Link className="navbar-brand about-network" to="/network">
