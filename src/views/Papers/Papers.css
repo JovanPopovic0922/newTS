@@ -1,0 +1,107 @@
+.papers-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #262626 !important;
+    background-image: url("../../assets/desktop/svg/background/papers-back.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    font-family: "Futura PT" !important;
+    letter-spacing: 4px;
+    color: hsl(0deg 0% 84%) !important;
+}
+
+.papers-content a{
+    font-size: 24px;
+    letter-spacing: 5px;
+    
+}
+
+.papers-content p{
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+
+.title-papers, .title-tldr{
+    background-color: #F8C16C;
+    background-image: linear-gradient(45deg, #F8C16C, #E3804B);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    line-height: 3 !important;  
+}
+
+.item-papers{
+    position: absolute;
+    left: 30%;
+}
+
+.item-tldr{
+    position: absolute;
+    display: block;
+    right: 30%;
+}
+
+.papers-cross{
+    width: auto;
+    display: none !important;
+    display: none;
+    font-weight: 300;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 30px;
+    left: calc(50% - 108px/2);
+}
+
+.side-head{
+    position: absolute;
+    height: 50%;
+    left: 2rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@media (max-width:768px) {
+    .papers-content{
+        background-image: url("../../assets/mobile/svg/background/vector-back.svg");
+        background-size: contain !important;
+        background-position: center center;
+        transition: all 0.5s ease;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .papers-content a{
+        font-size: 16px !important;
+    }
+    .item-papers{
+        position: absolute;
+        font-size: 16px !important;
+        left : calc(44% - 100px/2);
+        top: calc(34% - 170px/2);
+    }
+    .item-tldr{
+        position: absolute;
+        font-size: 16px !important;
+        left : calc(44% - 100px/2);
+        top: calc(34% + 100px/2);
+    }
+    .title-papers{
+        font-size: 16px !important;
+    }
+    .title-tldr{
+        font-size: 16px !important;
+    }
+    .papers-cross{
+        display: block !important;
+    }
+   
+}
